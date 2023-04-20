@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="tTime"><span id="span1">0</span>초 남았습니다!</h1>
+<button id="btn1">시작!</button>
+</body>
+<script>
+
+    let span = document.getElementById(`span1`)
+    let time = 60000;
+
+    btn1.addEventListener("click", function () {
+        // disable btn.
+        let time = 60000
+
+        this.disabled = `disabled`;
+        setInterval(function () {
+            if (time > 0) {
+                time = time - 1000
+                console.log(`남은 시간 : ${time / 1000}`)
+                span.innerHTML=`${time/1000}`
+            } else {
+                if (time < 0) {
+                    clearInterval()
+                }
+            }
+        }, 1000)
+    })
+
+    // or...
+
+    // btn1.addEventListener("click", function () {
+    //     // disable btn.
+    //     let time = 60000
+    //
+    //     if (time == null){
+    //     this.disabled = `disabled`;
+    //     setInterval(function () {
+    //         if (time > 0) {
+    //             time = time - 1000
+    //             console.log(`남은 시간 : ${time / 1000}`)
+    //             span.innerHTML=`${time/1000}`
+    //         } else {
+    //             if (time < 0) {
+    //                 clearInterval()
+    //             }
+    //         }
+    //     }, 1000)
+    //     }
+    // })
+</script>
+</html>
