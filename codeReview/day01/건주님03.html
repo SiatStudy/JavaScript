@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+        <legend>Stack</legend>
+        <input type="text" name="inp1" id="inp1">
+        <div id="stack"></div>
+        <button id="in">삽입</button>
+        <button id="delete">삭제</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Queue</legend>
+        <input type="text" name="inp2" id="inp2">
+        <div id="queue"></div>
+        <button id="inQ">삽입</button>
+        <button id="deleteQ">삭제</button>
+    </fieldset>
+    <script>
+        let data = [];
+        document.querySelector("#in").addEventListener("click", () => {
+            // data.add(0, document.querySelector("#inp1").value);
+            data.splice(0, 0, document.querySelector("#inp1").value);
+            document.querySelector("#stack").textContent = data;
+            document.querySelector("#inp1").value = "";
+      });
+      
+      document.querySelector("#delete").addEventListener("click", () => {
+        data.splice(0, 1);
+        document.querySelector("#stack").textContent = data;
+        document.querySelector("#inp1").value = "";
+      });
+      
+      let data1 = [];
+      document.querySelector("#inQ").addEventListener("click", () => {
+        data1.splice(0, 0, document.querySelector("#inp2").value);
+        document.querySelector("#queue").textContent = data1;
+        document.querySelector("#inp2").value = "";
+      });
+
+      document.querySelector("#deleteQ").addEventListener("click", () => {
+        data1.pop();
+        document.querySelector("#queue").textContent = data1;
+        document.querySelector("#inp2").value = "";
+      });
+    </script>
+  </body>
+</html>
