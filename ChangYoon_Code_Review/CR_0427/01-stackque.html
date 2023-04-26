@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <button id="pushBtn">삽입버튼</button>
+  <button id="popBtn">삭제버튼</button>
+  <button id="resetBtn">초기화버튼</button>
+
+  <script>
+    let stackArr;
+    let queArr;
+    let count;
+
+    function resetArr(){
+      stackArr=[1,2,3,4,5];
+      queArr=[1,2,3,4,5];
+      count=0;
+    }
+    resetArr();
+
+    function setArr(){
+      p1.textContent=`스택: ${stackArr}`;
+      p2.textContent=`큐: ${queArr}`;
+    }
+    setArr();
+
+    pushBtn.addEventListener("click",function(){
+      count++;
+      stackArr.push(`추가된 값 ${count}`);
+      queArr.push(`추가된 값 ${count}`);
+      setArr();
+    })
+
+    popBtn.addEventListener("click",function(){
+      stackArr.pop();
+      queArr=queArr.slice(1);
+      setArr();
+    })
+
+    resetBtn.addEventListener("click",function(){
+      resetArr();
+      setArr();
+    })
+
+  </script>
+</body>
+</html>
