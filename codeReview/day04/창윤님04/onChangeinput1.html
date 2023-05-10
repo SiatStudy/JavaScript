@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" name="txt1" id="txt1" onchange="changeInput()" placeholder="숫자 또는 문자를 입력">
+  <script>
+    function changeInput(){
+      let txt1 = document.querySelector("#txt1");
+      let val = txt1.value;
+      let lastVal = val[val.length-1]
+      console.log(lastVal);
+    }
+    
+  </script>
+</body>
+</html>
