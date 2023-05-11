@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="ipt1">
+<button id="btn1"></button>
+</body>
+<script>
+    // make a button A to Z
+    // each button has alphabet
+
+    for (let i = 65; i<=90; i++){
+        let btn = document.createElement("button");
+        btn.innerHTML = String.fromCharCode(i);
+        document.body.appendChild(btn);
+    }
+    document.addEventListener("click", function (e) {
+        if (e.target.tagName === "BUTTON"){
+            document.getElementById("ipt1").value += e.target.innerHTML;
+        }
+    })
+</script>
+</html>
