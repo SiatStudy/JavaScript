@@ -1,0 +1,103 @@
+/* CSS 수정하기 */
+:root {
+
+}
+
+body {
+    box-sizing: border-box;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 3rem 5rem;
+
+    width: 100%;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #5FD068;
+    color: #fff;
+}
+
+.test {
+    height: 100vh;
+}
+
+#gameTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#gameTitle h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+}
+#gameTitle h3 { font-size: 2rem; }
+#gameTitle p { font-size: 1.5rem; }
+
+#questionDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#questionDiv h3 { font-size: 2rem; }
+#questionDiv p { font-size: 1.5rem; }
+
+#gameUI {
+    padding: 1rem;
+    width: 25rem;
+    height: auto;
+
+    border: 2px dotted #fff;
+}
+
+#keyUI {
+    display: flex;
+    gap: 1rem;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 70%;
+}
+
+.key {
+    width: 3rem;
+    height: 3rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px #524a4e70;
+    border-radius: 0.2rem;
+
+    color: #F6FBF4;
+    
+    transition: 0.7s;
+}
+.key:hover {
+    box-shadow: 2px 2px 5px #524a4e70;
+    background-color: #F6FBF4;
+    color: #5FD068;
+}
+
+#keyUI button:disabled {
+    box-shadow: 2px 2px 5px #524a4e70;
+    background-color: #F6FBF4;
+    border: 2px solid #F6FBF4;
+    color: #5FD068;
+}
+
+#userUI {
+    display: flex;
+    gap: 2rem
+}
+
+#showHintBtn, #resetBtn  {
+    width: 10rem;
+}
