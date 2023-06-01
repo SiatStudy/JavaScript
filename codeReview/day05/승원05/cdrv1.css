@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    background-color: #eae8e8;
+  }
+  .container{
+      width: 600px;
+      height: 600px;
+      border: 1px solid rgba(255, 255, 255, 0.732);
+      position: absolute;
+      left: 30%;
+      top: 10%;
+      border-radius: 15px 15px 150px 15px;
+      background-color: rgba(255, 255, 255, 0.732);
+  }
+  .ipdv{
+      display: flex;
+      justify-content: space-between;
+      padding: 60px;
+  }
+  .inp{
+      width: 120px;
+      height: 50px;
+      border-radius: 5px;
+      font-size: 1.5rem;
+  }
+  #yperr1,#mperr1,#dperr1{
+    color: rgb(179, 179, 179);
+  }
+  input{
+      border: 0.5px solid rgb(179, 179, 179);
+  }
+  input:focus{
+      color : blueviolet;
+      border-color: blueviolet;
+      outline: none;
+  }
+  .rsf{
+      font-size: 5rem;
+      font-weight: bold;
+  }
+  .rsf1,.rsf2,.rsf3{
+      height: 11vh;
+      display: flex;
+      /* align-items: baseline; */
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+  }
+  #y1,#m1,#d1{
+      color: blueviolet;
+    }
+
+#btn {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#btn:hover {
+    background-position: 100% 0;
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#btn:focus {
+    outline: none;
+}
+
+#btn {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
