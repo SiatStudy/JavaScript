@@ -1,0 +1,195 @@
+@import url("./common.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* section1 차트 현황 */
+
+@media (max-width: 1024px) {
+  .box_slider {
+  }
+
+  .box_content {
+  }
+
+  .box_content_img {
+  }
+
+  .box_content_img > img {
+  }
+
+  .box_content_content {
+  }
+
+  .box_content_title {
+  }
+
+  .box_wr {
+  }
+
+  .box_bottom {
+  }
+
+  .box_name {
+  }
+
+  .file_selector {
+    cursor: pointer;
+    margin: 0 1rem;
+  }
+
+  .box_bottom input[type="file"] {
+    display: none;
+  }
+
+  .xi-star-o,
+  .xi-star,
+  .xi-image-o {
+    font-size: 1.7rem;
+  }
+
+  /* swiper slider custom css*/
+  .swiper {
+  }
+  .swiper-button-next {
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  /* section2 보고서 현황 */
+
+  .box {
+    margin-bottom: 1rem;
+    height: 18rem;
+  }
+
+  .box_top {
+  }
+
+  .box_title {
+  }
+
+  .text_blue {
+  }
+
+  .box_btn {
+  }
+
+  .report_content {
+  }
+
+  .report_content_title {
+    width: 80%;
+  }
+
+  .report_day {
+    width: 20%;
+    text-align: right;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 450px) {
+  .box_slider {
+  }
+
+  .box_content {
+  }
+
+  .box_content_img {
+  }
+
+  .box_content_img > img {
+  }
+
+  .box_content_content {
+  }
+
+  .box_content_title {
+  }
+
+  .box_wr {
+  }
+
+  .box_bottom {
+  }
+
+  .box_name {
+  }
+
+  .file_selector {
+    cursor: pointer;
+    margin: 0 0.6rem;
+  }
+
+  .box_bottom input[type="file"] {
+    display: none;
+  }
+
+  .xi-star-o,
+  .xi-star,
+  .xi-image-o {
+    font-size: 1.7rem;
+  }
+
+  /* swiper slider custom css*/
+  .swiper {
+  }
+
+  .swiper-wrapper {
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--fontLightBlue);
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: unset;
+  }
+
+  /* section2 보고서 현황 */
+
+  .box {
+    margin-bottom: 1rem;
+    height: 25rem;
+  }
+
+  .box_top {
+  }
+
+  .box_title {
+  }
+
+  .text_blue {
+  }
+
+  .box_btn {
+  }
+
+  .report_content {
+    flex-direction: column;
+  }
+
+  .report_content_title {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .report_day {
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+}

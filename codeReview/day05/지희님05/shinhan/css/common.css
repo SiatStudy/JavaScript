@@ -1,0 +1,83 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+:root {
+  --bgDeepBlue: #0b3587;
+  --bgLightBlue: #375895;
+  --fontLightBlue: #8fa3c8;
+  --fontDeepBlue: #6d94e0;
+}
+
+p {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--bgDeepBlue);
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.invisible {
+  display: none;
+}
+
+#wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#box_wrap {
+  width: 90%;
+  height: 40%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--fontLightBlue);
+}
+
+#box_wrap2 {
+  width: 90%;
+  height: 35%;
+  margin: 0 auto;
+  color: var(--fontLightBlue);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* tablet horizontal setting */
+@media (max-width: 1024px) {
+  #wrap {
+    height: auto;
+    padding: 1.5rem 0;
+  }
+  #box_wrap {
+  }
+  #box_wrap2 {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+
+/* mobile setting */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 16px;
+  }
+  #wrap {
+  }
+  #box_wrap {
+  }
+  #box_wrap2 {
+  }
+}
