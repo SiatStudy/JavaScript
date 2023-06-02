@@ -1,11 +1,11 @@
 function solution() {
   let num_list = [3, 4, 5, 2, 1];
-  let sumall1 = num_list.reduce((acc, cur) => acc + cur);
+  let sumall1 = num_list.reduce((acc, cur) => acc + cur, 0);
   let sumallpow1 = Math.pow(sumall1, 2);
-  let multipleall1 = num_list.reduce((acc, cur) => acc * cur);
+  let multipleall1 = num_list.reduce((acc, cur) => acc * cur, 1);
   let Binarynum = 0;
 
-  sumallpow1 > multipleall1 ? (Binarynum = 1) : (Binarynum = 0);
+  return sumallpow1 > multipleall1 ? 1 : 0;
 
   // if (sumallpow1 > multipleall1){
   //     Binarynum = 1;

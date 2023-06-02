@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Comp1.css";
+import event from
 
 const Comp1 = () => {
 
@@ -53,7 +54,7 @@ const Comp1 = () => {
           <p>YEAR</p><br />
           <input type="text" name="year" id="year" onChange={onChangeYear} value={yearVal} />
         </div>
-        <button onClick={btnClick}>입력</button>
+        <button onClick={event.onclick}>입력</button>
       </div>
       <article>
         <h3>{arr[0]}years</h3>

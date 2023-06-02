@@ -41,6 +41,20 @@ export function isValidDate({ day, month, year }) {
         return false;
     }
 
+    // if (dayDiff < 0) {
+    //     monthDiff--;
+    //     // 이전 달의 마지막 날짜를 구함
+    //     let lastMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 0); // (new Date 끝에 0을 입력하면 전달의 마지막 일자)
+    //     // 이전 달의 마지막 날짜와 비교 날짜의 일 차이에 현재 날짜의 일을 더하여 정확한 일 차이를 계산
+    //     dayDiff = lastMonth.getDate() - compareDate.getDate() + currentDate.getDate();
+    // }
+    //
+    // if (monthDiff < 0) {
+    //     yearDiff--;
+    //     // 월 차이가 음수인 경우 12개월을 더해주어 정확한 월 차이를 계산
+    //     monthDiff = 12 + monthDiff;
+    // }
+
     return !(year === twoDigitYear && month === currentMonth && day > currentDay);
 }
 

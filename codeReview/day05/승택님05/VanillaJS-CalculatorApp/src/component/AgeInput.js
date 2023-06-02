@@ -16,7 +16,7 @@ export default class AgeInput extends Component {
                 <div class="calendarInput" id="calendarInput">
                     <div class="inputDiv" id="DAY">
                         <label class="inputTitle" for="inputDAY">DAY</label>
-                        <input data-date="day" class="inputData" id="inputDAY" type="number" MIN="1">
+                        <input data-date="day" class="inputData" id="inputDAY" type="number" MIN="1" MAX="31">
                         <p class="errorMsg"></p>
                     </div>
                     <div class="inputDiv" id="MONTH">
